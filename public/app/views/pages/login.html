@@ -1,0 +1,13 @@
+<div class = "container" ng-controller="mainController as login">
+	<div class="wrapper">
+		<form  method="post" name="Login_Form" ng-submit="login.doLogin()" class="form-signin">       
+		    <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
+			  <hr class="colorgraph"><br>
+			  
+			  <input type="text" class="form-control" name="username" ng-model="login.loginData.username" placeholder="Username" required="" autofocus="" />
+			  <input type="password" class="form-control" name="password" ng-model="login.loginData.password" placeholder="Password" required=""/>     		  
+			 
+			  <button class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="submit">Login</button>  			
+		</form>			
+	</div>
+</div>
